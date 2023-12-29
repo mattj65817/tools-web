@@ -16,6 +16,6 @@ export default function Coords() {
     return (
         null == image
             ? <ImageSelector onSelected={handleSelected}/>
-            : <ImageInspector image={image}/>
+            : <ImageInspector src={image}/>
     );
 }
