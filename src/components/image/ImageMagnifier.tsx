@@ -51,7 +51,8 @@ export default function ImageMagnifier(props: ImageMagnifierProps) {
                 const x = offsetX + column;
                 const y = offsetY + row;
                 return (
-                    <div style={{
+                    <div key={`magnifierPixel_${index}`}
+                        style={{
                         ...(x === focusX && y === focusY ? focusedPixelBaseStyle : unfocusedPixelBaseStyle),
                         backgroundColor: getColor([x, y]),
                         gridRow: 1 + row,

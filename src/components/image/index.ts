@@ -1,13 +1,16 @@
 import ImageInspector from "./ImageInspector";
 import ImageSelector from "./ImageSelector";
+import MarkupImage from "./MarkupImage";
 
-import type {CanvasRegion2D, Point2D, Rect2D} from "./image-types";
+import type {Point2D, Rect2D} from "./image-types";
+import type {MarkupControl} from "./MarkupImage";
 
 /* Package exports. */
 export {
-    CanvasRegion2D,
     ImageInspector,
     ImageSelector,
+    MarkupControl,
+    MarkupImage,
     Point2D,
     Rect2D
 };
